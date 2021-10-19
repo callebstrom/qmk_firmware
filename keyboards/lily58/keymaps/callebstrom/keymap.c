@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |                    |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |   1  |   2  |   3  |   4  |   5  |   6  |                    |   7  |   8  |   9  |   0  |   +  |   ^  |
+ * |   ¡  |   @  |   £  |   $  |   €  |   ¥  |                    |   {  |   [  |   ]  |   }  |   \  |   ^  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |LShift| PREV | PLAY | NEXT | VOLU |      |-------.    ,-------| Left | Down |  Up  |Right |      |   '  |
  * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_RAISE] = LAYOUT( \
   KC_F1,  KC_F2,    KC_F3,   KC_F4,   KC_F5,   KC_F6,                        KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12, \
-  KC_1,   KC_2,     KC_3,    KC_4,    KC_5,    KC_6,                        KC_7,    KC_8,    KC_9,    KC_0,    SE_PLUS, SE_DIAE, \
+  ALGR(KC_1), SE_AT, SE_PND, SE_DLR, SE_EURO, ALGR( KC_6),                  SE_LCBR, SE_LBRC, SE_RBRC, SE_RCBR,  SE_BSLS, SE_DIAE, \
   KC_LSFT, KC_MPRV, KC_MPLY, KC_MNXT, KC_VOLU, XXXXXXX,                     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX, SE_QUOT, \
   KC_LCTRL, KC_LT, XXXXXXX, XXXXXXX, KC_VOLD, XXXXXXX,   _______, _______,  KC_PLUS, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, SE_TILD, \
                         KC_LALT, KC_LGUI, KC_DELETE, KC_BSPC, KC_ENT, MO(_RAISE), KC_DELETE, KC_RGUI \
