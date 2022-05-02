@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |LShift| PREV | PLAY | NEXT | VOLU |      |-------.    ,-------| Left | Down |  Up  |Right |      |   '  |
  * |------+------+------+------+------+------|   |   |    |    >  |------+------+------+------+------+------|
- * |LCtrl | <    |      |      | VOLD |      |-------|    |-------|   +  |   -  |   =  |   [  |   ]  |   ~  |
+ * |LCtrl | <    |      |      | VOLD |      |-------|    |-------| SCRL |   -  |   =  |   [  |   ]  |   ~  |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   | LAlt | RGUI |Delete| /BackSP /       \Enter \  |RAISE |BackSP| RGUI |
  *                   |      |      |      |/       /         \      \ |      |      |      |
@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_F1,  KC_F2,    KC_F3,   KC_F4,   KC_F5,   KC_F6,                        KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12, \
   ALGR(KC_1), SE_AT, SE_PND, SE_DLR, SE_EURO, ALGR( KC_6),                  SE_LCBR, SE_LBRC, SE_RBRC, SE_RCBR,  SE_BSLS, SE_DIAE, \
   KC_LSFT, KC_MPRV, KC_MPLY, KC_MNXT, KC_VOLU, XXXXXXX,                     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX, SE_QUOT, \
-  KC_LCTRL, KC_LT, XXXXXXX, XXXXXXX, KC_VOLD, XXXXXXX,  KC_PIPE, _______,  KC_PLUS, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, SE_TILD, \
+  KC_LCTRL, KC_LT, XXXXXXX, XXXXXXX, KC_VOLD, XXXXXXX,  KC_PIPE, _______,  KC_SCRL, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, SE_TILD, \
                         KC_LALT, KC_RGUI, KC_DELETE, KC_BSPC, KC_ENT, MO(_RAISE), KC_DELETE, KC_RGUI \
 ),
 /* ADJUST
